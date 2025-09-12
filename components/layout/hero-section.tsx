@@ -1,0 +1,55 @@
+import { Button } from "@/components/ui/button"
+import { ArrowRight, ArrowUpRight } from "lucide-react"
+
+export function HeroSection() {
+  return (
+    <section className="relative min-h-screen overflow-hidden">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-100 animate-in fade-in duration-1000"
+        style={{
+          backgroundImage: "url('/assets/images/hero-1.png')",
+        }}
+      />
+
+      {/* Overlay with blue gradient */}
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-900/60 via-slate-900/60 to-slate-900/40" />
+
+      {/* Content */}
+      <div className="relative z-10 flex items-center min-h-screen px-6 lg:px-12">
+        <div className="max-w-2xl">
+          {/* Main Heading */}
+          <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight animate-in fade-in slide-in-from-bottom-4 duration-700">
+            Build. Fund. Scale
+          </h1>
+
+          {/* Subheading */}
+          <p className="text-xl lg:text-2xl text-gray-300 mb-8 leading-relaxed animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
+            We help businesses and capital work better across markets, sectors, and stages.
+          </p>
+
+          {/* Call to Action Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-500">
+            <Button
+              size="lg"
+              className="bg-[#F4AD20] hover:bg-orange-600 text-white px-6 py-8 rounded-full text-lg font-semibold hover:scale-105 transition-all duration-200"
+            >
+              Let's Talk
+            </Button>
+
+            <Button
+              variant="outline"
+              size="lg"
+              className="text-white bg-white/10 border-none hover:bg-white hover:text-slate-900 px-8 py-8 rounded-full text-lg font-semibold flex items-center gap-2 hover:scale-105 transition-all duration-200"
+            >
+              Explore Services
+              <div className="w-10 h-10 flex items-center justify-center bg-white rounded-full border border-white">
+                <ArrowUpRight className="w-30 h-30 text-slate-900" />
+              </div>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
