@@ -68,9 +68,15 @@ export function TeamSection() {
           </div>
 
           {/* Bottom row - 3 members */}
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
+          <div className="grid grid-cols-2 md:flex md:justify-center gap-6 md:gap-12">
             {teamMembers.slice(2).map((member, index) => (
-              <div key={index} className="text-center">
+              <div
+                key={index}
+                className={`text-center ${
+                  // make the 3rd item (index 2) span 2 columns on mobile so it centers
+                  index === 2 ? 'col-span-2' : ''
+                }`}
+              >
                 <div
                   className={`w-32 h-32 md:w-40 md:h-40 rounded-full ${member.bgColor} mx-auto mb-4 overflow-hidden`}
                 >
