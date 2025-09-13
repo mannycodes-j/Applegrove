@@ -1,7 +1,15 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, ArrowUpRight } from "lucide-react"
+import Link from "next/link"
 
 export function HeroSection() {
+  // WhatsApp message
+  const whatsappNumber = '2348139597690'
+  const message = encodeURIComponent(
+    'Hello, I’d like to learn more about your services at Applegrove Advisory Limited.'
+  )
+  const whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${message}`
+
   return (
     <section className="relative min-h-screen overflow-hidden">
       {/* Background Image */}
@@ -25,28 +33,36 @@ export function HeroSection() {
 
           {/* Subheading */}
           <p className="text-xl lg:text-2xl text-gray-300 mb-8 leading-relaxed animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
-            We help businesses and capital work better across markets, sectors, and stages.
+            We help businesses and capital work better across markets, sectors,
+            and stages.
           </p>
 
           {/* Call to Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-500">
-            <Button
-              size="lg"
-              className="bg-[#F4AD20] hover:bg-orange-600 text-white px-6 py-8 rounded-full text-lg font-semibold hover:scale-105 transition-all duration-200"
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Let's Talk
-            </Button>
-
+              <Button
+                size="lg"
+                className="bg-[#F4AD20] hover:bg-orange-600 text-white px-6 py-8 rounded-full text-lg font-semibold hover:scale-105 transition-all duration-200 cursor-pointer"
+              >
+                Let's Talk
+              </Button>
+            </a>
+            <Link href="/services">
             <Button
               variant="outline"
               size="lg"
-              className="text-white bg-white/10 border-none hover:bg-white hover:text-slate-900 px-8 py-8 rounded-full text-lg font-semibold flex items-center gap-2 hover:scale-105 transition-all duration-200"
+              className="text-white bg-white/10 border-none hover:bg-white hover:text-slate-900 px-8 py-8 rounded-full text-lg font-semibold flex items-center gap-2 hover:scale-105 transition-all duration-200 cursor-pointer"
             >
               Explore Services
               <div className="w-10 h-10 flex items-center justify-center bg-white rounded-full border border-white">
                 <ArrowUpRight className="w-30 h-30 text-slate-900" />
               </div>
             </Button>
+            </Link>
           </div>
         </div>
       </div>
