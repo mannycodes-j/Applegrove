@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Toaster } from 'sonner'
 import { Manrope } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import PageLoader from '@/components/common/page-loader'
@@ -26,6 +27,7 @@ export default function RootLayout({
           {children}
           <Analytics />
           <PageLoader />
+          <Toaster richColors position="top-right" />
         </NavigationLoaderProvider>
       </body>
     </html>

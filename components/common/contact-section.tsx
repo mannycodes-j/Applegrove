@@ -1,23 +1,29 @@
-"use client"
+'use client'
 
-import type React from "react"
-
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Label } from "@/components/ui/label"
-import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react"
+import type React from 'react'
+import { useState } from 'react'
+import { toast } from 'sonner'
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Textarea } from '@/components/ui/textarea'
+import { Label } from '@/components/ui/label'
+import { Facebook, Instagram, Twitter, Linkedin } from 'lucide-react'
+// import { useToast } from '@/hooks/use-toast'
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
+    name: '',
+    email: '',
+    phone: '',
+    message: '',
   })
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  // const { toast } = useToast()
+
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target
     setFormData((prev) => ({
       ...prev,
@@ -25,10 +31,41 @@ export function ContactSection() {
     }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log("Form submitted:", formData)
+    console.log('Submitting form data:', formData) // 🔍 Debug log
+    setIsSubmitting(true)
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (response.ok) {
+        toast.success('Message sent successfully!', {
+          description: "We'll get back to you as soon as possible.",
+        })
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          message: '',
+        })
+      } else {
+        throw new Error('Failed to send message')
+      }
+    } catch (error) {
+      console.error('Error sending form:', error) // 🔍 Debug log
+     toast.error('Error sending message', {
+       description: 'Please try again later or contact us directly.',
+     })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -38,14 +75,17 @@ export function ContactSection() {
           {/* Left side - Contact Info */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <div className="inline-block bg-[#F4AD20] text-white px-4 py-2 rounded-full text-sm font-medium">
+              <div className="inline-block bg-[#F4AD20] text-black px-4 py-2 rounded-full text-sm font-medium">
                 Contact
               </div>
 
-              <h2 className="text-4xl lg:text-5xl font-bold text-white leading-tight">Let's get together</h2>
+              <h2 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
+                Let's get together
+              </h2>
 
               <p className="text-gray-300 text-lg">
-                Whether you're building, fundraising or scaling, <br /> we're here to help.
+                Whether you're building, fundraising or scaling, <br /> we're
+                here to help.
               </p>
             </div>
 
@@ -53,7 +93,9 @@ export function ContactSection() {
             <div className="space-y-4">
               <div className="flex justify-between items-center py-2  border-gray-700">
                 <span className="text-gray-300">Office</span>
-                <span className="text-white">28 Araromi Street, Yaba Lagos.</span>
+                <span className="text-white">
+                  28 Araromi Street, Yaba Lagos.
+                </span>
               </div>
 
               <div className="flex justify-between items-center py-2  border-gray-700">
@@ -106,7 +148,12 @@ export function ContactSection() {
 
           {/* Right side - Contact Form */}
           <div className="bg-white rounded-2xl p-8 shadow-xl ">
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form
+              onSubmit={handleSubmit}
+              noValidate
+              method="POST"
+              className="space-y-6"
+            >
               <div className="space-y-2">
                 <Label htmlFor="name" className="text-gray-900 font-medium">
                   Name<span className="text-red-500">*</span>
@@ -135,8 +182,8 @@ export function ContactSection() {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                    className="border-gray-200 focus:border-orange-500 focus:ring-orange-500 md:h-[60px] h-[30px] bg-[#CCCCCCCC]/20 text-gray-900 placeholder:text-gray-500"
-                  />
+                  className="border-gray-200 focus:border-orange-500 focus:ring-orange-500 md:h-[60px] h-[30px] bg-[#CCCCCCCC]/20 text-gray-900 placeholder:text-gray-500"
+                />
               </div>
 
               <div className="space-y-2">
@@ -173,9 +220,10 @@ export function ContactSection() {
 
               <Button
                 type="submit"
-                className="w-full bg-[#454545] hover:bg-gray-900 text-white py-6 rounded-lg font-medium transition-colors"
+                disabled={isSubmitting}
+                className="w-full bg-[#454545] hover:bg-gray-900 text-white py-6 rounded-lg font-medium transition-colors disabled:opacity-50"
               >
-                Send Message
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </Button>
             </form>
           </div>
