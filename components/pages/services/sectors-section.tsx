@@ -25,6 +25,11 @@ const sectors = [
       'We help energy companies/startups with projects in sustainable, sustainable energy finance, risk management, and partnerships.',
     image: '/assets/images/sector-4.png',
   },
+  {
+    title: 'Wealth management',
+    description: 'At Applegrove Advisory llc, Our wealth management is dedicated to helping clients achieving their financial goals through personalized strategies and comprehensive solutions. We combine expert investment management, tax efficiency planning, and risk mitigation to preserve and grow your wealth. Our team is committed to building long term relationships based on trust, transparency and a deep understanding of each client’s unique needs.',
+    image: '/assets/images/sector-5.jpg',
+  },
 ]
 
 export default function SectorsSection() {
