@@ -169,7 +169,10 @@ export function ContactSection() {
               <p className="text-gray-300">Follow us at</p>
               <div className="flex space-x-4">
                 {[
-                  { Icon: Instagram, href: '#' },
+                  {
+                    Icon: Instagram,
+                    href: 'https://www.instagram.com/applegrove_advisory_ltd?igsh=MXgxMXI0dm5rMmZhOQ==',
+                  },
                   { Icon: Facebook, href: '#' },
                   { Icon: Twitter, href: '#' },
                   { Icon: Linkedin, href: '#' },

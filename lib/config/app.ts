@@ -4,7 +4,7 @@ export const appConfig = {
   name: 'AppleGrove Advisory',
   description:
     'We help businesses and capital work better across markets, sectors, and stages.',
-  url: 'https://applegroveadvisory.com',
+  url: 'https://applegrove.co',
   ogImage: '/assets/icons/applegrove-og.png',
 } as const
 
