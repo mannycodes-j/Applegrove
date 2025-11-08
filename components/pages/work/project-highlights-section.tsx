@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from 'next/image'
 
 const projects = [
   {
@@ -8,15 +8,15 @@ const projects = [
     image: '/assets/images/topProject-1.png',
   },
   {
-    name: 'Alles Charts',
+    name: 'Alles Charis',
     description:
-      'A multifaceted SaaS geared to Agricultural and real estate. We helped develop investment roadmaps and marketing strategies to support expansion.',
+      'Alles Charis is an innovative line of credit platform specifically designed for oil and gas merchants. The solution streamlines access to working capital, enables seamless transaction processing, and provides robust inventory management tools. Our platform helps merchants optimize their cash flow and scale their operations efficiently in the dynamic energy sector.',
     image: '/assets/images/topProject-2.png',
   },
   {
     name: 'Venture Reg',
     description:
-      'A technological solution to business registration, incorporation and financial processes across African markets for early venture companies.',
+      'Venture reg is a compliance as a service start up and it involves strategic advisory and business setups and strategic partnership across international and intercontinental borders.',
     image: '/assets/images/topProject-3.png',
   },
   {
@@ -46,7 +46,7 @@ export function ProjectHighlightsSection() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-100 border border-gray-200 rounded-[20px] p-8 w-full max-w-[1296px] h-[616px] mx-auto hover:shadow-lg transition-all hover:scale-[1.01] animate-in fade-in slide-in-from-bottom-4 duration-700"
+              className="bg-gray-100 border border-gray-200 rounded-[20px] p-8 w-full max-w-[1296px] h-[850px] md:h-[616px] mx-auto hover:shadow-lg transition-all hover:scale-[1.01] animate-in fade-in slide-in-from-bottom-4 duration-700"
               style={{ animationDelay: `${400 + index * 200}ms` }}
             >
               <div className="grid md:grid-cols-2 gap-8 items-center h-full">
