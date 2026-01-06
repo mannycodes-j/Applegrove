@@ -50,7 +50,7 @@ export function ProjectHighlightsSection() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-100 border border-gray-200 rounded-[20px] p-8 w-full max-w-[1296px] h-[850px] md:h-[616px] mx-auto hover:shadow-lg transition-all hover:scale-[1.01] animate-in fade-in slide-in-from-bottom-4 duration-700"
+              className="bg-gray-100 border border-gray-200 rounded-[20px] p-8 w-full max-w-[1296px] h-[1100px] md:h-[616px] mx-auto hover:shadow-lg transition-all hover:scale-[1.01] animate-in fade-in slide-in-from-bottom-4 duration-700"
               style={{ animationDelay: `${400 + index * 200}ms` }}
             >
               <div className="grid md:grid-cols-2 gap-8 items-center h-full">
@@ -70,7 +70,7 @@ export function ProjectHighlightsSection() {
                 </div>
 
                 {/* Project Image */}
-                <div className="relative h-full min-h-[400px] group overflow-hidden rounded-lg">
+                <div className="relative h-full min-h-[300px] group overflow-hidden rounded-lg">
                   <Image
                     src={project.image || '/placeholder.svg'}
                     alt={project.name}

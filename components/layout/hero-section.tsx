@@ -33,14 +33,14 @@ export function HeroSection() {
           {/* Main Heading with Typewriter Animation */}
           <TypewriterText
             text="Build. Fund. Scale"
-            className="text-5xl lg:text-7xl font-bold text-white mb-2 leading-tight"
+            className="text-4xl lg:text-7xl font-bold text-white mb-2 leading-tight"
             speed={150}
             delay={3000}
           />
 
           {/* Subheading */}
           <motion.p
-            className="text-xl lg:text-xl text-gray-300 mb-12 leading-relaxed"
+            className="text-[12px] lg:text-xl text-gray-300 mb-12 leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 1.5 }}
@@ -49,7 +49,7 @@ export function HeroSection() {
           </motion.p>
 
           <motion.p
-            className="text-xl lg:text-xl text-gray-300 mb-8 leading-relaxed"
+            className="text-[12px] lg:text-xl text-gray-300 mb-8 leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 2.2 }}
