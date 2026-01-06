@@ -2,27 +2,31 @@ import Image from 'next/image'
 
 const projects = [
   {
-    name: 'HerHomes',
+    name: 'HerHomes — Venture Development (Housing & Financial Inclusion)',
+    tag: 'Venture Development',
     description:
-      "Nigeria's first crowd-led platform helping working women buy homes through validated financing and best lending options.",
+      'Internally developed product enabling credit‑led homeownership for working women through scalable community, automation and finance‑ready models.',
     image: '/assets/images/topProject-1.png',
   },
   {
-    name: 'Alles Charis',
+    name: 'Alles Charis — Oil & Gas Financing Advisory',
+    tag: 'Financing & Strategic Advisory',
     description:
-      'Alles Charis is an innovative line of credit platform specifically designed for oil and gas merchants. The solution streamlines access to working capital, enables seamless transaction processing, and provides robust inventory management tools. Our platform helps merchants optimize their cash flow and scale their operations efficiently in the dynamic energy sector.',
+      'Advised an Oil & Gas company on financing strategy and capital structuring, supporting engagement with lenders and capital partners to fund asset development and operational growth.',
     image: '/assets/images/topProject-2.png',
   },
   {
-    name: 'Venture Reg',
+    name: 'VentureReg — Venture Development (Regulatory & Compliance Infrastructure)',
+    tag: 'Venture Development',
     description:
-      'Venture reg is a compliance as a service start up and it involves strategic advisory and business setups and strategic partnership across international and intercontinental borders.',
+      'Venture Reg is a multi‑jurisdictional compliance platform for businesses going global. AppleGrove provides business, financing, partnership and talent acquisition support to the business. ',
     image: '/assets/images/topProject-3.png',
   },
   {
-    name: 'Firecrackers Football Club',
+    name: 'Firecrackers FC — Sports',
+    tag: 'Strategic Initiatives & Ecosystem Plays',
     description:
-      'An innovative multi-club football network advancing talent in youth development and talent exposure in Nigerian football.',
+      'Firecrackers Football Club is a grassroot football initiative positioned to unlock talent development and export from Africa. AppleGrove advised on the sustainable business model design, monetization pathways, investment and commercialization of the business. ',
     image: '/assets/images/topProject-5.png',
   },
 ]
@@ -51,10 +55,15 @@ export function ProjectHighlightsSection() {
             >
               <div className="grid md:grid-cols-2 gap-8 items-center h-full">
                 {/* Project Info */}
-                <div className="flex flex-col justify-center">
-                  <h3 className="text-3xl font-bold text-gray-900 mb-6">
-                    {project.name}
-                  </h3>
+                <div className="flex flex-col justify-between">
+                  <div>
+                    <div className="inline-block bg-[#f59e0b] text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
+                      {project.tag}
+                    </div>
+                    <h3 className="text-3xl font-bold text-gray-900 mb-6">
+                      {project.name}
+                    </h3>
+                  </div>
                   <p className="text-gray-600 leading-relaxed text-lg">
                     {project.description}
                   </p>

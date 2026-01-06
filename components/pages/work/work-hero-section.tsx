@@ -22,7 +22,7 @@ export function WorkHeroSection() {
       {/* Content */}
       <div className="relative z-10 text-center px-4">
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300">
-          Work / Projects
+          Selected Engagements & Ventures
         </h1>
       </div>
     </section>

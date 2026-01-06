@@ -21,13 +21,11 @@ export function OurStorySection() {
           {/* Right Column - Description */}
           <div>
             <p className="text-lg text-white/90 leading-relaxed">
-              AppleGrove Advisory transforms ideas into scalable ventures. We
-              partner with founders, growth-stage businesses, investors, and
-              institutions to tackle the complexities of launching, funding, and
-              expanding across markets. Our mission is to bridge the gap between
-              ambition and sustainable growth, combining hands-on
-              venture-building experience with capital advisory expertise to
-              deliver measurable impact.
+              AppleGrove is a venture development and advisory platform working
+              at the intersection of entrepreneurship, capital, and market
+              expansion. We partner closely with founders, operators, and
+              institutions to design scalable business models, structure
+              financing strategies, and support execution across growth stages.
             </p>
           </div>
         </div>

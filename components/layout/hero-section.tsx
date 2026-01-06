@@ -33,20 +33,31 @@ export function HeroSection() {
           {/* Main Heading with Typewriter Animation */}
           <TypewriterText
             text="Build. Fund. Scale"
-            className="text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight"
+            className="text-5xl lg:text-7xl font-bold text-white mb-2 leading-tight"
             speed={150}
             delay={3000}
           />
 
           {/* Subheading */}
           <motion.p
-            className="text-xl lg:text-2xl text-gray-300 mb-8 leading-relaxed"
+            className="text-xl lg:text-xl text-gray-300 mb-12 leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 2.5 }}
+            transition={{ duration: 0.7, delay: 1.5 }}
           >
-            We help businesses and capital work better across markets, sectors,
-            and stages.
+            We build scalable businesses and structure financing for growth.
+          </motion.p>
+
+          <motion.p
+            className="text-xl lg:text-xl text-gray-300 mb-8 leading-relaxed"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 2.2 }}
+          >
+            AppleGrove is a venture development and advisory platform supporting
+            founders, operators, and institutions with venture building,
+            financing strategy, and market expansion across capital‑intensive
+            and emerging markets.
           </motion.p>
 
           {/* Call to Action Buttons */}
@@ -54,7 +65,7 @@ export function HeroSection() {
             className="flex flex-col sm:flex-row gap-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 3 }}
+            transition={{ duration: 0.7, delay: 2.9 }}
           >
             <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
               <Button

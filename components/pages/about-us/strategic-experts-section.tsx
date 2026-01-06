@@ -32,11 +32,9 @@ export function StrategicExpertsSection() {
           {/* Right Column - Description */}
           <div>
             <p className="text-lg text-white/90 leading-relaxed">
-              We work closely with startups, corporates, and investors across
-              sectors, from technology to real estate, as true partners in
-              progress. Beyond providing insight, we support execution, solve
-              operational challenges, and ensure strategies translate into
-              tangible results.
+              Our work spans venture development, financing advisory, and
+              strategic initiatives across sectors including energy, trade,
+              housing, infrastructure, technology, and the creative economy.
             </p>
           </div>
         </div>

@@ -1,32 +1,75 @@
-import Image from "next/image"
+import Image from 'next/image'
 
 const services = [
   {
-    id: "venture-development",
-    title: "Venture Development",
+    id: 'venture-development',
+    title: 'Venture Development',
     description:
-      "We help you navigate the full spectrum of entrepreneurial ventures, as a trusted partner. Whether it's product design, market entry or business expansion, we provide comprehensive support to ensure success.",
-    image: "/assets/images/servicesWhatwe.png",
-    imagePosition: "left",
-    tags: ["Ideate-out ventures", "Strategic advisory", "Product & growth support", "Capital preparation"],
+      'We co‑build ventures from early idea through execution. Our work spans business model design, market validation, operational structuring, and go‑to‑market execution ensuring companies are built to scale and ready for financing, partnerships, and expansion.',
+    image: '/assets/images/servicesWhatwe.png',
+    imagePosition: 'left',
+    tags: [
+      'Ideate-out ventures',
+      'Strategic advisory',
+      'Product & growth support',
+      'Capital preparation',
+    ],
   },
   {
-    id: "capital-advisory",
-    title: "Capital & Investment Advisory",
+    id: 'capital-advisory',
+    title: 'Capital & Investment Advisory',
     description:
-      "We make navigation smoother. Our work spans securing strategic investment support, and investor matchmaking. Making connections that will bring your vision to life.",
-    image: "/assets/images/capture.png",
-    imagePosition: "right",
-    tags: ["Capital readiness", "Deal structuring", "Financial modeling", "Investor outreach & support"],
+      'We advise businesses on capital strategy and financing pathways across sectors. Our work includes structuring debt, project, and hybrid financing solutions; preparing lender‑ and investor‑ready materials; and supporting negotiations with banks, funds, and alternative capital providers.',
+    image: '/assets/images/capture.png',
+    imagePosition: 'right',
+    tags: [
+      'Capital readiness',
+      'Deal structuring',
+      'Financial modeling',
+      'Investor outreach & support',
+    ],
   },
   {
-    id: "strategic-expansion",
-    title: "Strategic Expansion & Transaction Advisory",
+    id: 'strategic-expansion',
+    title: 'Strategic Expansion & Transaction Advisory',
     description:
-      "We define complexities and institutional navigating strategic growth, from market entry to cross-border partnerships. Our expertise ensures seamless expansion.",
-    image: "/assets/images/strategic.png",
-    imagePosition: "left",
-    tags: ["Market expansion", "M&A and compliance", "Due diligence", "Cross-border transaction partnerships"],
+      'We support businesses navigating expansion, partnerships, and complex transactions. Our advisory covers market entry planning, regulatory and operational structuring, partnership development, and transaction support across growth stages.',
+    image: '/assets/images/strategic.png',
+    imagePosition: 'left',
+    tags: [
+      'Market expansion',
+      'M&A and compliance',
+      'Due diligence',
+      'Cross-border transaction partnerships',
+    ],
+  },
+  {
+    id: 'financing-strategic-advisory',
+    title: 'Financing & Strategic Advisory',
+    description:
+      'Alles Charis — Oil & Gas Financing Advisory. <br> Advised an Oil & Gas company on financing strategy and capital structuring, supporting engagement with lenders and capital partners to fund asset development and operational growth.',
+    image: '/assets/images/img hand.jpg',
+    imagePosition: 'right',
+    tags: [
+      'Financing strategy',
+      'Capital structuring',
+      'Lender engagement',
+      'Investor outreach',
+    ],
+  },
+  {
+    id: 'venture-development-studio-projects',
+    title: 'Venture Development & Venture Studio Projects',
+    description:
+      'Axis — Venture Development (Trade & Financing Infrastructure) <br> Internally developed product focused on building infrastructure to support cross‑border trade and financing workflows within African and Asian Markets. <br><br> HerHomes — Venture Development (Housing & Financial Inclusion) <br> Internally developed product enabling credit‑led homeownership for working women through scalable community, automation and finance‑ready models. <br><br> VentureReg — Venture Development (Regulatory & Compliance Infrastructure) <br> Venture Reg is a multi‑jurisdictional compliance platform for businesses going global. AppleGrove provides business, financing, partnership and talent acquisition support to the business. ',
+    image: '/assets/images/imhg.jpg',
+    imagePosition: 'left',
+    tags: [
+      'Venture ideation',
+      'Business model design',
+      'Go-to-market strategy',
+      'Operational structuring',
+    ],
   },
 ]
 
@@ -76,9 +119,10 @@ export default function ServicesContentSection() {
                 <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
                   {service.title}
                 </h3>
-                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                  {service.description}
-                </p>
+                <p
+                  className="text-lg text-gray-600 mb-8 leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: service.description }}
+                />
 
                 {/* Service Tags */}
                 <div className="space-y-3">
