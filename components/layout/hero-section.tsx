@@ -40,7 +40,7 @@ export function HeroSection() {
 
           {/* Subheading */}
           <motion.p
-            className="text-[12px] lg:text-xl text-gray-300 mb-12 leading-relaxed"
+            className="text-[13px] lg:text-xl text-gray-300 mb-12 leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 1.5 }}
@@ -49,7 +49,7 @@ export function HeroSection() {
           </motion.p>
 
           <motion.p
-            className="text-[12px] lg:text-xl text-gray-300 mb-8 leading-relaxed"
+            className="text-[13px] lg:text-xl text-gray-300 mb-8 leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 2.2 }}
