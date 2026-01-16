@@ -71,7 +71,7 @@ export function SelectedWorkSection() {
             className="text-4xl md:text-5xl font-bold text-gray-900 text-balance"
             variants={headerVariants}
           >
-            Our top project highlights
+            Our top project
           </motion.h2>
         </motion.div>
 

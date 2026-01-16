@@ -29,6 +29,13 @@ const projects = [
       'Firecrackers Football Club is a grassroot football initiative positioned to unlock talent development and export from Africa. AppleGrove advised on the sustainable business model design, monetization pathways, investment and commercialization of the business. ',
     image: '/assets/images/topProject-5.png',
   },
+  {
+    name: 'Axial — Venture Development (Trade & Trade Finance Infrastructure)',
+    tag: 'Venture Development & Venture Studio Projects',
+    description:
+      'Internally developed product focused on building infrastructure to support cross‑border trade and financing workflows within African and Asian Markets. ',
+    image: '/assets/images/axis.jpg',
+  },
 ]
 
 export function ProjectHighlightsSection() {

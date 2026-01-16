@@ -14,13 +14,19 @@ export const SELECTED_WORK = {
     {
       title: 'Venture Reg',
       description:
-        'Venture reg is a compliance as a service start up and it involves strategic advisory and business setups and strategic partnership across international and intercontinental borders.',
+        'Compliance as a service platform for strategic advisory & international business setup',
       image: '/assets/images/project-3.png',
     },
     {
       title: 'Firecrackers Football Club',
       description: 'Business Structure and strategy advisory',
       image: '/assets/images/project-4.png',
+    },
+    {
+      title: 'Axis',
+      description:
+        'Infrastructure platform for cross-border trade & financing workflows across African & Asian markets.',
+      image: '/assets/images/axis.jpg',
     },
   ],
 } as const

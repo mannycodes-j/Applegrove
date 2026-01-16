@@ -6,7 +6,7 @@ export const WHO_WE_WORK_WITH_DATA = {
       alt: "Professional business meeting with diverse team around conference table",
     },
     {
-      src: "/assets/images/business-meeting-1.png",
+      src: "/assets/images/business-meeting-0.png",
       alt: "Business collaboration and teamwork session",
     },
     {
@@ -22,11 +22,11 @@ export const WHO_WE_WORK_WITH_DATA = {
       alt: "Corporate discussion and advisory session",
     },
     {
-      src: "/assets/images/business-meeting-2.png",
+      src: "/assets/images/business-meeting-5.png",
       alt: "Professional business meeting with diverse team",
     },
     {
-      src: "/assets/images/business-meeting-3.png",
+      src: "/assets/images/business-meeting-6.png",
       alt: "Business collaboration session",
     },
   ],
