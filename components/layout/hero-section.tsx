@@ -46,7 +46,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 2.2 }}
           >
-            AppleGrove is a venture development and advisory platform supporting
+            AppleGrove is a venture development and advisory firm supporting
             founders, operators, and institutions with venture building,
             financing strategy, and market expansion across capital‑intensive
             and emerging markets.

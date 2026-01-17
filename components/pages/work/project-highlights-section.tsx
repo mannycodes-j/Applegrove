@@ -30,7 +30,7 @@ const projects = [
     image: '/assets/images/topProject-5.png',
   },
   {
-    name: 'Axial — Venture Development (Trade & Trade Finance Infrastructure)',
+    name: 'Axis — Venture Development (Trade & Trade Finance Infrastructure)',
     tag: 'Venture Development & Venture Studio Projects',
     description:
       'Internally developed product focused on building infrastructure to support cross‑border trade and financing workflows within African and Asian Markets. ',
