@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const projects = [
   {
-    name: 'HerHomes — Venture Development (Housing & Financial Inclusion)',
+    name: 'HerHomes — Housing & Financial Inclusion',
     tag: 'Venture Development',
     description:
       'Internally developed product enabling credit‑led homeownership for working women through scalable community, automation and finance‑ready models.',
@@ -16,7 +16,7 @@ const projects = [
     image: '/assets/images/topProject-2.png',
   },
   {
-    name: 'VentureReg — Venture Development (Regulatory & Compliance Infrastructure)',
+    name: 'VentureReg — Regulatory & Compliance Infrastructure',
     tag: 'Venture Development',
     description:
       'Venture Reg is a multi‑jurisdictional compliance platform for businesses going global. AppleGrove provides business, financing, partnership and talent acquisition support to the business. ',
@@ -30,7 +30,7 @@ const projects = [
     image: '/assets/images/topProject-5.png',
   },
   {
-    name: 'Axis — Venture Development (Trade & Trade Finance Infrastructure)',
+    name: 'Axis — Trade & Trade Finance Infrastructure',
     tag: 'Venture Development & Venture Studio Projects',
     description:
       'Internally developed product focused on building infrastructure to support cross‑border trade and financing workflows within African and Asian Markets. ',
@@ -48,7 +48,7 @@ export function ProjectHighlightsSection() {
             Selected Work
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-200">
-            Our top project highlights
+            Our Top Project Highlights
           </h2>
         </div>
 

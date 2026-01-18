@@ -67,7 +67,7 @@ export function AboutSection() {
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 Strategic
                 <br />
-                advisory experts
+                Advisory Experts
               </h2>
             </motion.div>
 

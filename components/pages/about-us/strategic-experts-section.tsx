@@ -25,7 +25,7 @@ export function StrategicExpertsSection() {
           {/* Left Column - Heading */}
           <div>
             <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
-              Strategic advisory experts
+              Strategic Advisory Experts
             </h2>
           </div>
 

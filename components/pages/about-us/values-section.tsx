@@ -40,7 +40,7 @@ export function ValuesSection() {
 
         {/* Section Heading */}
         <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">
-          What drives us
+          What Drives Us
         </h2>
 
         {/* Values Grid */}

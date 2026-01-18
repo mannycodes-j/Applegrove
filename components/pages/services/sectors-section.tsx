@@ -26,7 +26,7 @@ const sectors = [
     image: '/assets/images/sector-4.png',
   },
   {
-    title: 'Wealth management',
+    title: 'Wealth Management',
     description: 'At Applegrove Advisory llc, Our wealth management is dedicated to helping clients achieving their financial goals through personalized strategies and comprehensive solutions. We combine expert investment management, tax efficiency planning, and risk mitigation to preserve and grow your wealth. Our team is committed to building long term relationships based on trust, transparency and a deep understanding of each client’s unique needs.',
     image: '/assets/images/sector-5.jpg',
   },
@@ -72,7 +72,7 @@ export default function SectorsSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h3 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-              Helping ventures build, raise capital, and expand
+              Helping Ventures Build, Raise Capital, and Expand
             </h3>
           </div>
           <div>

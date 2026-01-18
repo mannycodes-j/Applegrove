@@ -111,7 +111,7 @@ export function ServicesSection() {
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}
         >
-          What we do
+          What We Do
         </motion.h2>
 
         {/* Services Grid */}

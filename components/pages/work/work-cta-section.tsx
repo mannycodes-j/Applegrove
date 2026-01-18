@@ -26,7 +26,7 @@ export default function WorkCTASection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready to Work Together?
+            Ready To Work Together?
           </h2>
           <p className="text-xl text-gray-300">
             Choose the option that best fits your needs
@@ -50,7 +50,7 @@ export default function WorkCTASection() {
               <Link href={option.link}>
                 <Button
                   size="lg"
-                  className="w-full bg-[#F4AD20] hover:bg-orange-600 text-black px-6 py-4 rounded-full text-base font-semibold hover:scale-105 transition-all duration-200 cursor-pointer flex items-center justify-center gap-2"
+                  className="w-full bg-[#F4AD20] hover:bg-orange-600 text-white px-6 py-4 rounded-full text-base font-semibold hover:scale-105 transition-all duration-200 cursor-pointer flex items-center justify-center gap-2"
                 >
                   Get Started
                   <ArrowUpRight className="w-5 h-5" />

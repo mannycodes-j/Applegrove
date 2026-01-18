@@ -83,7 +83,7 @@ export default function ServicesContentSection() {
             Our Services
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            What we do
+            What We Do
           </h2>
         </div>
 

@@ -129,7 +129,7 @@ export function ContactSection() {
                 className="text-4xl lg:text-5xl font-bold text-white leading-tight"
                 variants={itemVariants}
               >
-                Let's get together
+                Let's Get Together
               </motion.h2>
 
               <motion.p

@@ -85,7 +85,7 @@ export function WhoWeWorkWithSection() {
             className="text-3xl lg:text-4xl font-bold text-white mb-8"
             variants={itemVariants}
           >
-            Who we work with
+            Who We Work With
           </motion.h2>
 
           {/* Category Pills */}
