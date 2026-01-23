@@ -57,7 +57,7 @@ const services = [
       'Investor outreach',
     ],
   },
-  {
+  /*{
     id: 'venture-development-studio-projects',
     title: 'Venture Development & Venture Studio Projects',
     description:
@@ -70,7 +70,7 @@ const services = [
       'Go-to-market strategy',
       'Operational structuring',
     ],
-  },
+  },*/
 ]
 
 export default function ServicesContentSection() {
