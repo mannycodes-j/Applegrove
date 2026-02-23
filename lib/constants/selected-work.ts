@@ -7,8 +7,7 @@ export const SELECTED_WORK = {
     },
     {
       title: 'Alles Charis',
-      description:
-        'Allies Charis is a line of credit for oil and gas merchant.',
+      description: 'Debt financing advisory for upstream oil and gas company.',
       image: '/assets/images/project-2.png',
     },
     {
@@ -19,7 +18,8 @@ export const SELECTED_WORK = {
     },
     {
       title: 'Firecrackers Football Club',
-      description: 'Business Structure and strategy advisory',
+      description:
+        'Cooperate governance and business sustainability advisory for emerging football club in Nigeria',
       image: '/assets/images/project-4.png',
     },
     {
