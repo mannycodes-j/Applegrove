@@ -14,9 +14,9 @@ const teamMembers = [
     bgColor: 'bg-orange-400',
   },
   {
-    name: 'Adetoyese Arigbabuwo',
-    role: 'IT',
-    image: '/assets/images/adetoye-pic.png',
+    name: 'Treasure Alli',
+    role: 'Developer & IT',
+    image: '/assets/images/treasure-pic.png',
     bgColor: 'bg-orange-400',
   },
   {
@@ -26,9 +26,9 @@ const teamMembers = [
     bgColor: 'bg-slate-800',
   },
   {
-    name: 'Okolie David',
-    role: 'Finance',
-    image: '/assets/images/okolie-pic.png',
+    name: 'Olajide Ifeoluwa',
+    role: 'Product Designer',
+    image: '/assets/images/ifeoluwa-pic.png',
     bgColor: 'bg-slate-400',
   },
 ]

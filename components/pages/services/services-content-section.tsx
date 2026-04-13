@@ -47,7 +47,7 @@ const services = [
     id: 'financing-strategic-advisory',
     title: 'Financing & Strategic Advisory',
     description:
-      'Alles Charis — Oil & Gas Financing Advisory. <br> Advised an Oil & Gas company on financing strategy and capital structuring, supporting engagement with lenders and capital partners to fund asset development and operational growth.',
+      'We advise companies on financing strategy and capital structuring, supporting engagement with lenders and capital partners to fund asset development and operational growth.',
     image: '/assets/images/img hand.jpg',
     imagePosition: 'right',
     tags: [
