@@ -2,31 +2,31 @@ import Image from 'next/image'
 
 const teamMembers = [
   {
-    name: 'Stephanie Etiaka',
+    name: 'STEPHANIE ETIAKA',
     role: 'Managing Partner',
     image: '/assets/images/steph-pic.png',
     bgColor: 'bg-slate-700',
   },
   {
-    name: 'Emeka Osbourne',
+    name: 'EMEKA OSBOURNE',
     role: 'Executive Partner',
     image: '/assets/images/team-2.png',
     bgColor: 'bg-orange-400',
   },
   {
-    name: 'Treasure Alli',
+    name: 'TREASURE ALLI',
     role: 'Developer & IT',
     image: '/assets/images/treasure-pic.png',
     bgColor: 'bg-orange-400',
   },
   {
-    name: 'Olonade Adeoluwa',
+    name: 'OLONADE ADEOLUWA',
     role: 'Communications',
     image: '/assets/images/adeoluwa-pic.png',
     bgColor: 'bg-slate-800',
   },
   {
-    name: 'Olajide Ifeoluwa',
+    name: 'OLAJIDE IFEOLUWA',
     role: 'Product Designer',
     image: '/assets/images/ifeoluwa-pic.png',
     bgColor: 'bg-slate-400',
