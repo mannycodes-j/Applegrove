@@ -95,8 +95,7 @@ export default function WorkCTASection() {
                   Ready when you are.
                 </h3>
                 <p className="text-gray-300">
-                  Takes about 8–10 minutes. Have your NIN, BVN and a valid ID
-                  ready.
+                  Takes less than a minute.
                 </p>
               </div>
               <Button
